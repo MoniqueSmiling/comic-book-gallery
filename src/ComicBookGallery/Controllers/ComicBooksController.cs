@@ -10,12 +10,7 @@ namespace ComicBookGallery.Controllers // need to be public, or MVC can't find a
     {
         public ActionResult Detail() // everything inside of controller is an action
         {
-            if (DateTime.Today.DayOfWeek == DayOfWeek.Saturday)
-            {
-                return Redirect("/");
-            }
-
-            return Content("Hello from the comic book controller!");
+            return View();
         }
     }
 }
